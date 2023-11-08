@@ -42,7 +42,13 @@ public class ToDoList {
                     break;
                 case 4:
                     System.out.println("Lista zadań: ");
-                    lista.forEach((n)-> n.wyswietl());
+                    if(lista.size()==0){
+                        System.out.println("(Brak zadań)");
+                    }else{
+                        lista.forEach((n)-> n.wyswietl());
+                    }
+                    break;
+                case 5:
                     break;
                 default:
                     System.out.println("Błędny numer");
